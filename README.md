@@ -23,3 +23,6 @@ main_nuclear_car_armour = 2 / 4;
 sleep 60; // time until detonation
 nukepos = "Land_HelipadEmpty_F" createVehicle [14914,16535,10]; //coordinates are altis airport
 [nukepos] execVM "addons\nuke\scripts\nuclear\detonation.sqf";
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eZEn2WTFvhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
