@@ -6,10 +6,11 @@ INSTALLATION
 1. add the addons folder to your mission, so should be (Exile.Namalsk\addons\nuke)
 
 2. edit description.ext and look for "class CfgSounds" 
+  -if its not there just add 
 ```
-  -if its not there just add #include "addons\nuke\config\sound.hpp"
+#include "addons\nuke\config\sound.hpp"
+```
   -if its there add the contents of sound.hpp to it (without the classname ofc)
-```
 
 
 3. edit init.sqf and add this
