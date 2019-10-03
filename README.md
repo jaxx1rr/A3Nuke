@@ -31,5 +31,6 @@ nukepos = "Land_HelipadEmpty_F" createVehicle [14914,16535,10]; //coordinates ar
 [nukepos] execVM "addons\nuke\scripts\nuclear\detonation.sqf";
 ```
 
+this will trigger a Nuke in Altis airport after 60 seconds 
 
 [![A3Nuke Test](https://img.youtube.com/vi/eZEn2WTFvhw/0.jpg)](https://www.youtube.com/watch?v=eZEn2WTFvhw)
