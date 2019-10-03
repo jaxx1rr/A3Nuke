@@ -24,5 +24,4 @@ sleep 60; // time until detonation
 nukepos = "Land_HelipadEmpty_F" createVehicle [14914,16535,10]; //coordinates are altis airport
 [nukepos] execVM "addons\nuke\scripts\nuclear\detonation.sqf";
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eZEn2WTFvhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![A3Nuke Test](https://img.youtube.com/vi/eZEn2WTFvhw/0.jpg)](https://www.youtube.com/watch?v=eZEn2WTFvhw)
