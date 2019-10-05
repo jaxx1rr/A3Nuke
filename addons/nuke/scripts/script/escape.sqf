@@ -3,6 +3,8 @@ private ["_xpos", "_ypos", "_radius", "_units", "_distance", "_dir"];
 _xpos = _this select 0;
 _ypos = _this select 1;
 
+//hint str radiation_radius;
+
 _radius = radiation_radius * 2.3;
 _units = [_xpos, _ypos, 0] nearobjects ["All", _radius];
 

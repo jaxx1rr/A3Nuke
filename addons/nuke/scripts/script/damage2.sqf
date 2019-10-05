@@ -5,10 +5,10 @@ _ypos = _this select 1;
 
 for [{_dis = 300}, {_dis <= radiation_radius}, {_dis = _dis + 100}] do
 {
-  //[_xpos, _ypos, _dis] exec "addons\nuke\scripts\nuclear\script\wave.sqs";
+  //[_xpos, _ypos, _dis] exec "addons\nuke\scripts\script\wave.sqs";
   if ( damage_enabled ) then
   {
-    if ( _dis < 800 ) then {[_xpos, _ypos, _dis] execvm "addons\nuke\scripts\nuclear\script\noise.sqf"};
+    if ( _dis < 800 ) then {[_xpos, _ypos, _dis] execvm "addons\nuke\scripts\script\noise.sqf"};
   };
   {
     if ( ! (_x iskindof "Land_nav_pier_m_2") ) then
@@ -28,5 +28,5 @@ for [{_dis = 300}, {_dis <= radiation_radius}, {_dis = _dis + 100}] do
 };
 
 
-  [_xpos, _ypos, time] execvm "addons\nuke\scripts\nuclear\script\geiger.sqf";
-  [_xpos, _ypos, time] execvm "addons\nuke\scripts\nuclear\script\radiation.sqf";
+  [_xpos, _ypos, time] execvm "addons\nuke\scripts\script\geiger.sqf";
+  [_xpos, _ypos, time] execvm "addons\nuke\scripts\script\radiation.sqf";

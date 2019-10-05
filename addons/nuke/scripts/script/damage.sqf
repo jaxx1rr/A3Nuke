@@ -19,7 +19,7 @@ sleep 4;
   };
 } foreach ([_xpos, _ypos, 0] nearobjects ["All", 200]);
 
-[_xpos, _ypos] execvm "addons\nuke\scripts\nuclear\script\damage2.sqf";
+[_xpos, _ypos] execvm "addons\nuke\scripts\script\damage2.sqf";
 
 if ( damage_enabled ) then
 {
@@ -42,7 +42,7 @@ _airs = main_airs;  };
 } foreach _airs;
 
 
-  {//[_x] execvm "addons\nuke\scripts\nuclear\script\electro_pulse.sqf"} foreach _vehicles;
+  {//[_x] execvm "addons\nuke\scripts\script\electro_pulse.sqf"} foreach _vehicles;
 
 
 {
@@ -60,7 +60,7 @@ _airs = main_airs;  };
       _damage = _damage * _damage;
       _speed = _damage + random (_damage / 4);
       if ( _x iskindof "Man" ) then {_speed = _speed * 2}
-        else {[_x, _speed * 4] execvm "addons\nuke\scripts\nuclear\script\rotate.sqf"};
+        else {[_x, _speed * 4] execvm "addons\nuke\scripts\script\rotate.sqf"};
       _speed = _speed * main_nuclear_blow_speed;
       _x setvelocity [(_vel select 0) + (_speed * cos _dir),
                       (_vel select 1) + (_speed * sin _dir),

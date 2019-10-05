@@ -1,5 +1,5 @@
 # A3Nuke
-Arma 3 Nuke mission addon (no mods needed)
+Arma 3 Nuke mission addon (no mods needed) - MULTIPLAYER WORKS !
 
 INSTALLATION
 
@@ -11,26 +11,21 @@ INSTALLATION
 #include "addons\nuke\config\sound.hpp"
 ```
   -if its there add the contents of sound.hpp to it (without the classname ofc)
-
-
-3. edit init.sqf and add this
+  
+  
+3. also in description.ext look for class CfgRemoteExec and in class Functions add
 ```
-radiationtime = 360;
-damage_enabled = true;
-radiation_radius = 1400;
-main_nuclear_blow_speed = 170;
-main_nuclear_half_life = 10 * 30;
-main_nuclear_radiation_damage = 0.02;
-main_nuclear_car_armour = 2 / 4;
+class NukeTriggerServer			{ allowedTargets=2; }; 
+class NukeTriggerClient			{ allowedTargets=1; }; 
 ```
+ 
 
-4. now to trigger it theres only this manual option for now (add at end of init.sqf) :
+4. edit init.sqf and add
 ```
-sleep 60; // time until detonation
-nukepos = "Land_HelipadEmpty_F" createVehicle [14914,16535,10]; //coordinates are altis airport
-[nukepos] execVM "addons\nuke\scripts\nuclear\detonation.sqf";
+[] execVM "addons\nuke\nuke_init.sqf";
 ```
 
-this will trigger a Nuke in Altis airport after 60 seconds 
+5. optionally edit nuke_init.sqf and change the way its triggered (currently Tempest Device trucks are nukes)
+
 
 [![A3Nuke Test](https://img.youtube.com/vi/eZEn2WTFvhw/0.jpg)](https://www.youtube.com/watch?v=eZEn2WTFvhw)
