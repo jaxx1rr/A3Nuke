@@ -25,7 +25,9 @@ class NukeTriggerClient			{ allowedTargets=1; };
 [] execVM "addons\nuke\nuke_init.sqf";
 ```
 
-5. optionally edit nuke_init.sqf and change the way its triggered (currently Tempest Device trucks are nukes)
+5. optionally edit nuke_init.sqf and change the way its triggered (currently Tempest Device trucks are nukes - Note: the trigger option will not appear on the vehicle upon spawn or purchase, only on server restart.. this is WIP..)
 
 
 [![A3Nuke Test](https://img.youtube.com/vi/eZEn2WTFvhw/0.jpg)](https://www.youtube.com/watch?v=eZEn2WTFvhw)
+
+
